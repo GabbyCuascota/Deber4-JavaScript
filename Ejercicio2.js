@@ -17,7 +17,7 @@ var gen = [ gen1 = 62,
             gen15 = 124,
             gen16 = 124,
             gen17 = 124,
-            gen18=124,
+            gen18 = 124,
             gen19 = 124]
 var A = 0;
 var total = 0;
@@ -33,7 +33,7 @@ while (A < 4){
     A++;
 }
 var B = 4;
-for (B ; B<gen.length; B++) {
+for (B ; B < gen.length; B++) {
     total = total + gen[B];
     console.log('Generador #' + (B + 1) + ' está prendido, añadiendo ' + gen[B] + ' MW para un total de ' + total + ' MW.');
 }
