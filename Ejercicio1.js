@@ -6,18 +6,17 @@ var cedula = '1720437670';
 var edad = 26;
 var estadoCivil = 'soltera';
 var arreglo = [nombre, apellido, cedula, edad, estadoCivil];
-function validarNumeroDeStringsEnArreglo (arreglo){
-    if (nombre == edad){
-        console.log(typeof edad)
-    }else{
-        console.log("No es string")
+function validarNumeroDeStringsEnArreglo (arreglo=['Gabriela','Cuascota','1720437670',26,'soltera']){
+    var x = 0;
+    var y = 0;
+    for (x; x<arreglo.length;x++){
+        console.log(typeof arreglo[x]);
+        if (typeof arreglo[x] == 'string'){
+            y = y + 1;
+        }
     }
-    return arreglo;
+    return 'Número de strings es: '+ y;
 }
-console.log(typeof nombre) ;
-console.log(typeof apellido) ;
-console.log(typeof cedula) ;
-console.log(typeof edad) ;
-console.log(typeof estadoCivil);
-//console.log(typeof arreglo);
-console.log('Numero de strings es: ',arreglo.length);
+console.log(validarNumeroDeStringsEnArreglo(arreglo));
+
+
